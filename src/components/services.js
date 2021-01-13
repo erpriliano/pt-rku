@@ -4,7 +4,7 @@ import { servicesData } from "../mock/data"
 
 const Services = () => {
   return (
-    <div id="services" className="container mx-auto pt-24 pb-12">
+    <div id="services" className="container mx-auto px-6 pt-24 pb-12">
       <div className="flex flex-col text-center w-full mb-10">
         <h1 className="text-2xl font-bold tracking-wide mb-4">Layanan Kami</h1>
       </div>
