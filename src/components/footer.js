@@ -4,7 +4,7 @@ import { footerData } from "../mock/data"
 
 const Footer = () => {
   return (
-    <div className="bg-gray-200 max-w-screen-xl w-full mx-auto flex items-center sm:flex-row flex-col px-6 pt-14 pb-24">
+    <div className="max-w-screen-xl mx-auto flex items-center sm:flex-row flex-col px-6 pt-14 pb-24">
       <Link
         to="/"
         className="flex items-center md:justify-start justify-center"

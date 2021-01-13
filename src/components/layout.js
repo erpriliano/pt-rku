@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <div>
-        <main>{children}</main>
+        <main className="inset-x-0">{children}</main>
       </div>
       <Footer />
     </>
