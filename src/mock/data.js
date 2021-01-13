@@ -71,7 +71,8 @@ export const companyProfile = {
     "Kami siap melayani kebutuhan anda dalam bidang elektrikal, perawatan kebersihan gedung serta penyedia barang dan jasa. Kami melayani anda dengan profesional dan kepuasan anda adalah prioritas bagi kami.",
   shortHistory:
     'PT. Rezki Karfadz Utama secara resmi berdiri pada tahun 2010 di Jakarta. Sebagai suatu perusahaan, kami fokus dalam bidang pengadaan barang dan jasa. Kami yakin dengan latar belakang yang kami miliki, kami dapat memberikan solusi terbaik untuk anda, demi kebutuhan pelanggan, sesuai dengan motto kami "Illuminates the need solution"',
-  contact: +6287889977882,
+  mobileNumber: +6287889977882,
+  phoneNumber: +622129361198,
   email: "rezkikarfadzutama@yahoo.com",
   address:
     "Graha Komando, Jl. Raya Cipinang Indah No. 01, Jakarta Timur, 13420",
