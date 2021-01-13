@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/pt-rku",
   siteMetadata: {
     title: `PT. Rezki Karfadz Utama`,
     description: `Company profile website for PT. Rezki Karfadz Utama`,
