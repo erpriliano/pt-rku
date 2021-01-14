@@ -19,13 +19,13 @@ const Header = () => {
           scrollActive ? "shadow-md pt-0" : " pt-4"
         }`}
       >
-        <nav className="max-w-screen-2xl px-6 sm:px-8 lg:px:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="max-w-screen-2xl px-6 sm:px-8 lg:px:px-16 mx-auto grid grid-flow-col py-3 sm:py-4 font-Poppins">
           <div className="col-start-1 col-end-2 flex items-center">
-            <h1 className="text-lg font-bold tracking-wide">
+            <h1 className="text-lg md:text-xl font-bold tracking-wide">
               PT. Rezki Karfadz Utama
             </h1>
           </div>
-          <ul className="hidden lg:flex col-start-11 col-end-12 text-black items-center">
+          <ul className="hidden lg:flex col-start-11 col-end-12 text-black text-sm items-center">
             {navigationMenu.map((data, index) => (
               <LinkScroll
                 key={index}
@@ -35,7 +35,7 @@ const Header = () => {
                 duration={1000}
                 activeClass="active"
                 onSetActive={() => setActiveLink(data.linkTo)}
-                className={`px-4 py-2 cursor-pointer inline-block relative ${
+                className={`px-4 py-2 cursor-pointer inline-block relative md:text-lg ${
                   activeLink === data.linkTo
                     ? "font-bold text-blue-500 border-b-2 border-blue-500"
                     : "hover:text-blue-500"

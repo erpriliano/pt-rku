@@ -35,6 +35,12 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      link={[
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+          rel="stylesheet"
+        ></link>,
+      ]}
       meta={[
         {
           name: `description`,
@@ -69,7 +75,13 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet"
+      ></link>
+    </Helmet>
   )
 }
 

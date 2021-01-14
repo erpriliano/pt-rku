@@ -10,10 +10,12 @@ const Home = () => {
       className="container mx-auto flex px-6 pt-24 md:flex-row flex-col items-center"
     >
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 className="text-3xl font-bold tracking-wide mb-4">
+        <h1 className="font-Lato text-2xl md:text-3xl font-bold tracking-wide mb-4">
           {companyProfile.name}
         </h1>
-        <p className="mb-8 leading-relaxed text-sm">{companyProfile.about}</p>
+        <p className="font-Poppins mb-8 leading-relaxed text-sm">
+          {companyProfile.about}
+        </p>
         <div className="w-full flex justify-center">
           <button
             className="px-4 py-2 flex justify-center rounded-md items-center bg-green-500 text-white"
@@ -29,7 +31,7 @@ const Home = () => {
                 fillRule="evenodd"
               />
             </svg>
-            <p className="text-sm">Whatsapp</p>
+            <p className="text-sm font-Lato tracking-wide">Whatsapp</p>
           </button>
         </div>
       </div>
