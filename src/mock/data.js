@@ -1,5 +1,12 @@
 import React from "react"
 
+import cleaningImg1 from "../images/gallery/cleaning-1.jpg"
+import cleaningImg2 from "../images/gallery/cleaning-2.jpg"
+import containerImg from "../images/gallery/container-1.jpg"
+import electricalImg1 from "../images/gallery/listrik-1.jpg"
+import electricalImg2 from "../images/gallery/listrik-2.jpg"
+import electricalImg3 from "../images/gallery/listrik-3.jpg"
+
 //Navigation Menu
 export const navigationMenu = [
   {
@@ -68,7 +75,7 @@ export const navigationMenu = [
 export const companyProfile = {
   name: "PT. Rezki Karfadz Utama",
   about:
-    "Kami siap melayani kebutuhan anda dalam bidang elektrikal, perawatan kebersihan gedung serta penyedia barang dan jasa. Kami melayani anda dengan profesional dan kepuasan anda adalah prioritas bagi kami.",
+    "Kami siap melayani kebutuhan anda dalam bidang elektrikal, perawatan kebersihan gedung serta penyedia barang dan jasa. Kami selalu belajar serta menganalisa kebutuhan klien kami demi memberikan solusi terbaik serta kualitas barang dan jasa bagi kebutuhan klien, karena bagi kami melayani anda dengan profesional dan kepuasan anda adalah prioritas bagi kami.",
   shortHistory:
     'PT. Rezki Karfadz Utama secara resmi berdiri pada tahun 2010 di Jakarta. Sebagai suatu perusahaan, kami fokus dalam bidang pengadaan barang dan jasa. Kami yakin dengan latar belakang yang kami miliki, kami dapat memberikan solusi terbaik untuk anda, demi kebutuhan pelanggan, sesuai dengan motto kami "Illuminates the need solution"',
   mobileNumber: +6287889977882,
@@ -76,8 +83,6 @@ export const companyProfile = {
   email: "rezkikarfadzutama@yahoo.com",
   address:
     "Graha Komando, Jl. Raya Cipinang Indah No. 01, Jakarta Timur, 13420",
-  companyValue:
-    "Kami selalu belajar serta menganalisa demi memberikan solusi terbaik dan kualitas barang / jasa bagi kebutuhan pelanggan",
   companyVision: "One Solution",
   companyMission: [
     "Memberikan pelayanan terbaik dalam kebutuhan produk dan jasa",
@@ -118,6 +123,15 @@ export const servicesData = [
       "Pengadaan kontainer (petikemas)",
     ],
   },
+]
+
+export const gallery = [
+  cleaningImg1,
+  cleaningImg2,
+  containerImg,
+  electricalImg1,
+  electricalImg2,
+  electricalImg3,
 ]
 
 //Footer Data

@@ -4,7 +4,10 @@ import { servicesData } from "../mock/data"
 
 const Services = () => {
   return (
-    <div id="services" className="container mx-auto px-6 pt-24 pb-24 font-Lato">
+    <div
+      id="services"
+      className="w-full max-w-screen-2xl container mx-auto px-6 pt-20 lg:pt-28 pb-24 font-Lato"
+    >
       <div className="flex flex-col text-center w-full mb-10">
         <h1 className="text-2xl md:text-3xl font-bold tracking-wide mb-4">
           Layanan Kami

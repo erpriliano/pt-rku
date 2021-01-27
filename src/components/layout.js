@@ -25,12 +25,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div>
-        <main
-          className={`inset-x-0 transition-all duration-1000 ease-in-out ${opacity}`}
-        >
-          {children}
-        </main>
+      <div
+        className={`inset-x-0 transition-all duration-1000 ease-in-out ${opacity}`}
+      >
+        {children}
       </div>
       <Footer />
     </>
