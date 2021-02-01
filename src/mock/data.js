@@ -91,40 +91,69 @@ export const companyProfile = {
   ],
 }
 
-//Company services
-export const servicesData = [
+//Services
+export const companyServices = [
   {
-    title: "Mekanik Elektrikal",
+    serviceTitle: "Mekanikal Elektrikal",
     services: [
-      "Pasang baru listrik TR",
-      "Pasang baru listrik TM",
-      "Perubahan daya dari TR-TR, TR-TM, TM-TM",
-      "Pemeliharaan atau perbaikan perangkat listrik TR/TM",
-      "Pengadaan serta pembuatan panel TR/TM",
-      "Jasa sertifikasi",
-      "Pengadaan barang dan jasa grounding system",
+      "Genset",
+      "Grounding system",
+      "Maintenance",
+      "Panel system",
+      "Penangkal petir",
+      "UPS",
+      "Panel TM (Cubicle)",
+      "Trafo",
+      "Kabel",
+      "Tiang",
+    ],
+    descriptions: [
+      "Pemasangan baru / Perubahan listrik Tegangan Rendah (TR) daya 450VA - 197.000VA",
+      "Pemasangan baru / Perubahan listrik Tegangan Menengah (TM) daya ≥ 200KVA",
+      "Jasa pemeliharaan dan teknisi",
+      "Jasa perbaikan",
+      "Jasa pemasangan",
+      "Sertifikasi",
     ],
   },
   {
-    title: "Pembersihan Gedung",
+    serviceTitle: "General Cleaning",
     services: [
-      "Pembersihan kaca / ACP",
-      "Selent",
-      "Pengecatan gedung / kantor / apartment",
-      "Pengadaan SDM untuk kebersihan gedung",
+      "Cleaning service",
+      "Gondola",
+      "Maintenance",
+      "Pengecatan",
+      "Epoxy lantai",
+      "Rope access",
+    ],
+    descriptions: [
+      "Re-sealant (Ext)",
+      "ACP (Ext)",
+      "Dinding keramik (Ext)",
+      "Water proofing (Ext)",
+      "Granit (Int)",
+      "Karpet (Int)",
+      "Teraso (Int)",
+      "Poles marmer (Int)",
     ],
   },
   {
-    title: "Supplier",
-    services: [
-      "Pengadaan perangkat kelistrikan (panel, trafo, rak TR, dsb)",
-      "Cubicle Incoming / Cubicle Outgoing",
-      "Pengadaan ACP / Kaca",
-      "Pengadaan kontainer (petikemas)",
+    serviceTitle: "Supplier Barang dan Jasa",
+    services: ["Elektrikal", "Cleaning"],
+    descriptions: [
+      "Genset",
+      "Kabel",
+      "UPS",
+      "Trafo",
+      "Panel ATS AMF",
+      "Chemical",
+      "Peralatan kebersihan",
+      "Peralatan keamanan",
     ],
   },
 ]
 
+//Gallery data
 export const gallery = [
   cleaningImg1,
   cleaningImg2,

@@ -3,11 +3,19 @@ import React from "react"
 import { companyProfile } from "../mock/data"
 import backgroundImg from "../images/hero-img.jpeg"
 
+const textToWhatsapp = phoneNumber => {
+  var message = encodeURIComponent(
+    "Halo, saya melihat website perusahaan anda dan saya tertarik menggunakan jasa anda"
+  )
+  var url = `https://wa.me/${phoneNumber}?text=${message}`
+  window.location.assign(url)
+}
+
 const Home = () => {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${backgroundImg})`,
         position: "relative",
         height: "100vh",
         width: "100%",
@@ -26,8 +34,8 @@ const Home = () => {
           {companyProfile.about}
         </p>
         <button
-          className="px-4 py-2 flex justify-center rounded-md items-center bg-green-500 text-white"
-          onClick={() => console.log(companyProfile.contact)}
+          className="px-4 py-2 flex justify-center rounded-md items-center bg-green-500 text-white appearance-none focus:outline-none"
+          onClick={() => textToWhatsapp(companyProfile.mobileNumber)}
         >
           <svg
             className="w-4 h-4 fill-current mr-2"

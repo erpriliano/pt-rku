@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { footerData, companyProfile } from "../mock/data"
 
 const Footer = () => {
@@ -22,7 +21,10 @@ const Footer = () => {
         </div>
         <div className="flex justify-center md:items-center md:justify-end w-full pt-4 md:w-1/2 py-2">
           <span className="w-6 h-6 items-center rounded-full border-2 border-gray-500 hover:border-blue-500 mr-2 md:mr-4">
-            <a className="hover:text-blue-500 text-gray-500" href="#">
+            <a
+              className="hover:text-blue-500 text-gray-500"
+              href={`mailto:${companyProfile.email}`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -1,19 +1,72 @@
 import React from "react"
 
-import { servicesData } from "../mock/data"
+import { servicesData, companyServices } from "../mock/data"
 
 const Services = () => {
   return (
     <div
       id="services"
-      className="w-full max-w-screen-2xl container mx-auto px-6 pt-20 lg:pt-28 pb-24 font-Lato"
+      className="w-full max-w-screen-2xl xl:h-screen container mx-auto px-6 pt-20 lg:pt-28 pb-24 font-Lato"
     >
-      <div className="flex flex-col text-center w-full mb-10">
+      <h1 className="text-2xl md:text-3xl text-center mb-6 font-bold">
+        Layanan Kami
+      </h1>
+      <div className="w-full md:w-2/3 xl:w-3/4 mx-auto mb-10">
+        <p className="leading-loose text-sm text-center">
+          Kami menyediakan jasa pelayanan di bidang Mekanikal Elektrikal,
+          General Cleaning serta Pengadaan Barang dan Jasa dengan peruntukan
+          Apartment, Hotel, Pabrik, Perkantoran, Perumahan, Rumah Sakit maupun
+          Universitas
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {companyServices.map((service, index) => (
+          <div
+            key={index}
+            className="border border-gray-200 hover:shadow-lg p-4 flex flex-col transition duration-700 ease-in-out"
+          >
+            <h1 className="text-center font-bold tracking-wide">
+              {service.serviceTitle}
+            </h1>
+
+            <div className="w-4/5 md:w-full h-20 md:h-28 mx-auto my-4 flex flex-col justify-center">
+              <p className="text-sm text-center">
+                {service.services.join(" • ")}
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              {service.descriptions.map((desc, index) => (
+                <div key={index} className="flex items-center mb-2">
+                  <span className="w-4 mr-1">
+                    <svg
+                      className="w-4 h-4 text-green-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
+                    </svg>
+                  </span>
+                  <p className="text-sm">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="flex flex-col text-center w-full mb-10">
         <h1 className="text-2xl md:text-3xl font-bold tracking-wide mb-4">
           Layanan Kami
         </h1>
-      </div>
-      <div className="flex flex-wrap -m-4">
+      </div> */}
+      {/* <div className="flex flex-wrap -m-4">
         {servicesData.map((service, index) => (
           <div key={index} className="p-4 lg:w-1/3 mb:w-1/2 w-full">
             <div className="h-full p-6 rounded-lg border-2 border-gray-300 hover:border-blue-500 flex flex-col relative overflow-hidden">
@@ -44,7 +97,7 @@ const Services = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
